@@ -166,3 +166,47 @@ h1 {
   left:unset;
   right:0;
 }
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-container {
+        display: none;
+    }
+    
+    .logo1 {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .logo1 img {
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1315px) {
+    .header .lupa,
+    .header .lupa-img {
+        display: none;
+    }
+}
+@media screen and (max-width: 950px) {
+    .header .lupa,
+    .header .lupa-img {
+        display: none;
+    }
+
+    .header .nav-links li {
+        display: none; /* Ocultar los elementos li en el menú */
+    }
+
+    .darkModeSwitch {
+        display: none;
+    }
+}
